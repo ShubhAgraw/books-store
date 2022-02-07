@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style media="screen">
+  body{
+    overflow-x: hidden;
+  }
+    .heading{
+      padding : 0 20px;
+    }
+    .px-2{
+      font-size : 17px;
+    }
+    .c1{
+        background-image: url("https://www.sjpl.org/sites/default/files/images-legacy/book_with_yellow_background_smaller.jpg");
+         background-repeat: no-repeat;
+          background-size: cover;
+    }
+    .col2{
+      background-color  : white;
+      box-shadow: 11px 8px 52px rgba(0 , 0 , 0 , .35);
+    }
+    .c3{
+    box-shadow: 11px 8px 52px rgba(0 , 0 , 0 , .35);
+    }
+    .about{
+      margin-top: 7vh;
+      margin-bottom: 7vh;
+    }
+    .features{
+      width: 100vw;
+      padding-top: 6vh;
+      padding-bottom: 10vh;
+      margin-bottom: 3vh;
+    }
+    .f-text{
+      text-align: center;
+    }
+    .c2
+{
+  text-align: center;
+  padding: 5vh;
+  padding-bottom: 2.5vh;
+  font-size: 1.5vw;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.c2info
+{
+  text-align: center;
+  line-height: 1.5;
+    font-family: "Antic Slab";
+    font-size: 1.25vw;
+    font-weight: lighter;
+}
+.carousel{
+  margin: 6vh 4vw;;
+  padding-top: 5vh;
+  position: relative;
+  box-shadow: 11px 8px 52px rgba(255 , 255 , 255 , .35);
+  background-color: white;
+  height: 35vh;
+}
+.about{
+  margin-top: 5vh;
+  width: 100vw;
+}
+.a-text{
+  margin-bottom: 5vh;
+}
+.a-div{
+  margin-top: 3vh;
+}
+.txt{
+  margin-bottom: 2vh;
+}
+.head1{
+  margin-left: 2vw;
+  font-weight: 400;
+}
+  </style>
+  </head>
+  <body >
+    <div class = "heading">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <h2 class = "head1 ">Books Store</h2>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#home" class="nav-link px-2 link-dark">Home</a></li>
+          <li><a href="#reviews" class="nav-link px-2 link-dark">Reviews</a></li>
+          <li><a href="#login" class="nav-link px-2 link-dark">Login</a></li>
+          <li><a href="#about" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button id = "signup" type="button" class="w-75 btn btn-dark">Sign-up</button>
+        </div>
+      </header>
+    </div>
+
+
+    <div id = "home" class="about container py-4">
+    <div class="c1 p-5 mb-4 brounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Books Store</h1><p class="col-md-8 fs-4">The best source to buy premium quality books. Choose from award winning books and new releases. Also, if you are looking for a gift to send someone then buy books online and surprise a book lover by getting it delivered to them.</p>
+  </div>
+</div>
+
+
+<div class="row align-items-md-stretch">
+  <div class="col-md-6">
+    <div class="col2 h-100 p-5 text-dark rounded-3">
+      <h2 class ="txt">“Read, read, read.</h2>
+      <p class = "fs-6"> Read everything -- trash, classics, good and bad, and see how they do it. Just like a carpenter who works as an apprentice and studies the master. Read! You'll absorb it.
+      Then write. If it's good, you'll find out. If it's not, throw it out of the window.”</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="c3 h-100 p-5 text-white rounded-3 bg-dark">
+      <h2 class = "txt" >Friends</h2>
+      <p class = "fs-6">"Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers."</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id = "reviews" class = "features bg-dark">
+  <h1 class = "f-text display-5 fw-bold text-white">Reviews</h2>
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3 class="c2">GREAT EXPERIENCE !!</h3>
+      <h4 class="c2info">Customer care is very responsive . The team, is very responsible . </h4>
+
+    </div>
+    <div class="carousel-item">
+      <h3 class="c2">Highly recommended - good quality with fast delivery</h3>
+      <h4 class="c2info">Ordered multiple books this year - quality was good, service professional and delivery fast. Much appreciated and will be coming back! </h4>
+
+    </div>
+    <div class="carousel-item">
+      <h3 class="c2">Amazing service</h3>
+      <h4 class="c2info">Very good quality, very fast delivery speed, very satisfied. </h4>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div id ="login" class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-lg-5 py-5">
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="display-4 fw-bold lh-1 mb-3">Login</h1>
+      <p class="col-lg-10 fs-4">Login to get full access to Two + 2 boomk store and explore the vast assortment of available books.</p>
+    </div>
+    <div class="col-md-10 mx-auto col-lg-5">
+      <form class="p-4 p-md-5 border rounded-3 bg-light" method="post" action="/">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-dark" type="submit">Login</button>
+        <hr class="my-4">
+        <small class="text-muted">By clicking Login, you agree to the terms of use.</small>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <div id ="about" class="a-div bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="a-text display-5 fw-bold text-white">About us</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Books store is a registered name and novice in the genre of offering best quality books online. Whether you enjoy mythology, fiction, science-fiction, biographies, fantasy, thriller, classic, poetry, historical fiction, suspense, fairy tales, self-help, or academic literary works, you can find and buy books online from a huge collection. You can buy books online and get it delivered to your humble abode without hassles. </p>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#signup").click(function(){
+      window.location.href = "signup";
+    })
+  </script>
+</html>

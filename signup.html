@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style media="screen">
+  body{
+    overflow : hidden;
+  }
+  .signupinnerdiv{
+    width: 30vw;
+    margin: 0 auto 0;
+    padding: 1.5vw;
+    border-radius: 4%;
+    background-color: white;
+}
+.signupform{
+    padding-top: 17vh;
+    padding-bottom: 29vh;
+    opacity: 0.82;
+}
+.signupdiv{
+  background-image: url("https://wallpapermemory.com/uploads/394/book-wallpaper-full-hd-1920x1080-128859.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position : center;
+}
+.form-title{
+    text-align: center;
+    font-weight: 700;
+    padding: 1vh;
+}
+.btn-block{
+  width : 100%;
+}
+.or{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+</style>
+  </head>
+  <body >
+
+    <div class="signupdiv" id = "mainFormDiv">
+    <form class="signupform" action = "/signup" method = "post">
+    <div class="signupinnerdiv form-group">
+    <h4 class="form-title">CREATE ACCOUNT</h4>
+        <div class="forminputs form-group">
+            <label for= "signupusername">Username</label><br>
+            <input type="text" id="signupusername" name = "name" class="form-control" required></input>
+        </div>
+        <div class="forminputs form-group">
+            <label for= "signupemail">Email</label><br>
+            <input type="email" id="signupemail" name = "mail" class="form-control" required></input>
+        </div>
+        <div class="forminputs form-group">
+            <label for="signuppassword">Password</label><br>
+            <input type = "password" id="signuppassword" name = "password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></input>
+        </div>
+        <div class="forminputs form-group">
+            <label for="confirmpassword">Confirm Password</label><br>
+            <input type="password" id="confirmpassword" class="form-control" name = "confirmpassword" required></input>
+        </div>
+        <div class="forminputs form-group">
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name = "age" class="form-control" required></input>
+        </div>
+        <label for="about">Address</label><br>
+        <textarea id="about" rows="3" cols="50" name = "address" class="form-control" required></textarea><br>
+        <div id="wow">
+          <button id = "createButton" type="submit" class="btn btn-dark btn-lg btn-block" >Create Account</button>
+        </div>
+
+        </div>
+    </form>
+</div>
+
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#wow").mouseenter(function(){
+      var p1 = $("#signuppassword").val() ;
+      var p2 = $("#confirmpassword").val();
+      if( p1 != p2)
+      {
+        document.getElementById("createButton").disabled = true;
+      }
+
+    });
+    $("#wow").mouseleave(function(){
+      document.getElementById("createButton").disabled = false;
+    });
+
+  </script>
+</html>
